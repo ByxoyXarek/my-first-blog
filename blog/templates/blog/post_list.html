@@ -1,26 +1,19 @@
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <title>Hookan23</title>
     </head>
     <body>
         <div>
             <h1>SmokeShop</h1>
         </div>
-
+        {% for post in posts %}
         <div>
-            <h2><em><strong>Как правильно выбрать кальян?</strong></em></h2>
-            <p></p>
-            <ul>
-                <li>Размер</li>
-                    <li>Если вы панируете использовать кальян исключительно дома, не стоит гнаться за высокими аксессуарами. Такой выбор обуславливается тем, что средний или небольшой кальян удобнее брать на природу и в походы, переносить из комнаты в комнату, чистить, заправлять.</li>
-                <li>второй элемент</li>
-            </ul>
+            <p>Опубликованно: {{ post.published_date }}</p>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        {% endfor %}
     </body>
 </html>
