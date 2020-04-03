@@ -1,19 +1,74 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <title>Hookan23</title>
-    </head>
-    <body>
-        <div>
-            <h1>SmokeShop</h1>
-        </div>
-        {% for post in posts %}
-        <div>
-            <p>Опубликованно: {{ post.published_date }}</p>
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-        {% endfor %}
-    </body>
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Сайт о Алене</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <header class="page-header">
+      <a class="header-email" href ="https://vk.com/aleshka2507">Алена в Вк</a>
+      <a class="header-phone" href ="https://instagram.com/___bad____girl______?igshid=nnffae534cek">Алена в Интаграмме</a>
+    </header>
+
+    <section class="hero-image">
+      <h1 class="heading">Алёна Федорова</h1>
+      <p>Фактики о ней:</p>
+      <ul class="hr">
+        <li>Играет на гитаре</li>
+        <li>Добрая,милая,красивая</li>
+        <li>Хорошая хозяйка</li>
+        <li>Вкусно готовит</li>
+        <li>Пропадает на миллион лет</li>
+      </ul>  
+    </section>
+
+    <section class="intro">
+      <h2 class="subheading">Давайте познакомимся с ней</h2>
+      <figure class="user-image">
+        <img src="{% static 'css/img/alena1.jpg' %}" width="700" height="800" alt="Фотография Алены">
+      </figure>
+      <div class="child">
+        <h3>Любитель гитары</h3>
+        <video  class="user-video" src="{% static 'css/video/gitara.mp4' %}" type = "video/mp4" controls = "controls" height = 100% width="300"></video>
+        <p>Очень красиво поет</p>
+      </div>
+      <div class="child">
+        <h3>Хорошая сестра</h3>
+        <img  src="{% static 'css/img/sestra.jpg' %}" height = "500" width="500"></video>
+        <p>Очень красиво поет</p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="subheading">Мои работы:</h2>
+
+      <h3>Программы на Python:</h3>
+      <ul>
+          <li>Программа для слежки больных коронавирусом</li>
+          <li>Программа для решения полного и не полного квадратного уравнения</li>
+          <li>Генератор идей для бизнеса</li>
+          <li>Автоматическая проверка курса золота,если достигает определенных цен или колебанний,то программа заходит на сайт,входит в аккаунт и в зависимости от сценария делает ставку,что золото вырастет или упадет</li>
+      </ul>
+
+      <h3>Небольше достижения в химии и физике(для 8-и классника)</h3>
+      <ul>
+        <li>Участие в городской олимпиаде по физике</li>
+        <li>Участие в городском марафоне по физике с реди 7-8 классов.Занял первое место</li>
+        <li>Заучиваю химии и интересуюсь ей,решаю достаточно интересные задачи,хочу пойти на марафон или олимпиаду по химии</li>
+      </ul>
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+        <a class="header-email" href ="https://vk.com/aleshka2507">Алена в Вк</a>
+        <a class="header-phone" href ="https://instagram.com/___bad____girl______?igshid=nnffae534cek">Алена в Интаграмме</a>
+      </div>
+    </footer>
+  </div>
+  </body>
 </html>
