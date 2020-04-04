@@ -101,11 +101,15 @@ body {
 }
 
 .child {
-  height: 500px;
+  height: 570px;
   display: inline-block;
   width: 300px;
   text-align: center;
   margin-right: 110px;
+}
+.child1{
+  margin: 0 0 45px;
+  padding-left:50px;
 }
 
 .portfolio h3 {
