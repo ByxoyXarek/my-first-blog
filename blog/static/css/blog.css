@@ -103,13 +103,13 @@ body {
 .child {
   height: 570px;
   display: inline-block;
-  width: 300px;
+  width: 350px;
   text-align: center;
   margin-right: 110px;
 }
 .child1{
   margin: 0 0 45px;
-  padding-left:50px;
+  padding-left:100px;
 }
 
 .portfolio h3 {
@@ -131,11 +131,17 @@ body {
 }
 
 .skill-html {
-  background-image: url("img/icon-html.svg");
+  background-image: url("img/cras.png");
 }
 
 .skill-css {
-  background-image: url("img/icon-css.svg");
+  background-image: url("img/ym.png");
+}
+.skill-vr{
+  background-image: url("img/vr.png");
+}
+.skill-sm{
+  background-image: url("img/sm.png");
 }
 
 .level {
@@ -147,12 +153,65 @@ body {
   border: 1px solid #86c3fa;
   border-radius: 8px;
 }
-
+.level .level1{
+  background-color: red;
+  border: 0px solid red;
+}
+.level .level2{
+  background-color: green;
+  border: 0px solid green;
+}
+.level .level3{
+  background-color: #FFD300;
+  border: 0px solid #FFD300;
+}
 .level div {
   margin: 1px;
   height: 12px;
   background-color: #288be6;
   border-radius: 6px;
+}
+.j1{
+  list-style-image: url("img/no.png");
+  background-color: rgba(1000, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 320px;
+  margin:0 0 5px;
+}
+.j2{
+  list-style-image: url("img/no.png");
+  background-color: rgba(1000, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 320px;
+  margin:0 0 5px;
+}
+.j3{
+  list-style-image: url("img/no.png");
+  background-color: rgba(1000, 0, 0, 0.5);
+  border-radius: 8px;
+  margin:0 0 5px;
+  width: 320px;
+}
+.j4{
+  list-style-image: url("img/no.png");
+  background-color: rgba(1000, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 320px;
+  margin:0 0 5px;
+}
+.j5{
+  list-style-image: url("img/no.png");
+  background-color: rgba(1000, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 320px;
+  margin:0 0 5px;
+}
+.j6{
+  list-style-image: url("img/no.png");
+  background-color: rgba(1000, 0, 0, 0.5);
+  border-radius: 8px;
+  margin:0 0 5px;
+  width: 320px;
 }
 
 .portfolio {
